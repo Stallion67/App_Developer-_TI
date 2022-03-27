@@ -21,7 +21,7 @@ public class SqlLiteContract {
         public static final String COLUMN_providerServiceCharge = "providerServiceCharge";
         public static final String COLUMN_taxAccount = "taxAccount";
         public static final String COLUMN_withholdingTax = "withholdingTax";
-        public static final String COLUMN_NAME = "withholdingTaxAccount";
+        public static final String COLUMN_withholdingTaxAccount = "withholdingTaxAccount";
         public static final String COLUMN_excise = "excise";
         public static final String COLUMN_ItemFeeId = "ItemFeeId";
         public static final String COLUMN_isActive = "isActive";
@@ -51,11 +51,12 @@ public class SqlLiteContract {
         //Third Table feeGroups
         public static final String TABLE_NAME3 ="feeGroups";
         //Use   COLUMN_Id ="Id";  for Defualt ID
-        public static final String COLUMN3_itemFeeId ="itemFeeId";
+
         public static final String COLUMN3_feeGroupsId ="feeGroupsId";
         //use COLUMN_name = "name";
         public static final String COLUMN3_description ="description";
         public static final String COLUMN3_itemId ="itemId";
+        public static final String COLUMN3_itemFeeId ="itemFeeId";
         public static final String COLUMN3_item ="item";
         public static final String COLUMN3_clientFees ="clientFees";
         public static final String COLUMN3_isActive ="isActive";
@@ -66,7 +67,7 @@ public class SqlLiteContract {
         public static final String TABLE_NAME4 ="itemFeeMapSettings";
         //Use   COLUMN_Id ="Id";  for Defualt ID
         //Use COLUMN3_itemFeeId ="itemFeeId"; for relation
-        public static final String COLUMN3_itemFeeMap ="itemFeeMap";
+        public static final String COLUMN4_itemFeeMap ="itemFeeMap";
 
     }
 }
