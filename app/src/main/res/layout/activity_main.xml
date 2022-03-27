@@ -24,19 +24,21 @@
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please Enter Id"
+                android:text="Please Enter Fee Id"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etFeeGroupId"
+                android:hint="01234567"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:backgroundTint="@color/white"
                 android:padding="5dp"
+                android:inputType="number"
                 android:textSize="30dp" />
 
             <Button
@@ -45,6 +47,7 @@
                 android:backgroundTint="@color/buttonColor"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:id="@+id/btnViewData"
                 android:text="View Data"
                 android:onClick="ViewDataAction"
                 android:textAlignment="center" />
