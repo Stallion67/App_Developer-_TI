@@ -10,6 +10,209 @@
         android:id="@+id/itemfeeClick"
         android:background="#007687">
 
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:id="@+id/layoutId"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="id:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupId"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupId"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutName"
+            android:layout_below="@+id/layoutId">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="Name :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupName"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutisActive"
+            android:layout_below="@+id/layoutName">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="isActive :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupIsActive"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupIsActive"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutissueDate"
+            android:layout_below="@+id/layoutisActive">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="IssueDate :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupIssueDate"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupIssueDate"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutproviderServiceChargeAccount"
+            android:layout_below="@+id/layoutissueDate">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="IproviderServiceChargeAccount :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupproviderServiceChargeAccount"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupProviderServiceChargeAccount"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutexercise"
+            android:layout_below="@+id/layoutproviderServiceChargeAccount">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="exercise :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupexercise"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupExcise"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/layoutWithholdingTax"
+            android:layout_below="@+id/layoutexercise">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:textStyle="normal"
+                android:text="WithholdingTax :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/feeGroupWithholdingTax"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:text="@string/feeGroupWithholdingTax"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutWithholdingTax"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#4CAF50"
+            android:padding="20dp"
+            android:text="View Details >>">
+
+        </Button>
+
+
+
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

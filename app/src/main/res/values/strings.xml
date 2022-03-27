@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">App Dev TI</string>
+
+    <string name="feeGroupId">30119</string>
+    <string name="feeGroupName">Mock MTN Airtime fees</string>
+    <string name="feeGroupIsActive">true</string>
+    <string name="feeGroupIssueDate">11-march 2022</string>
+    <string name="feeGroupProviderServiceChargeAccount">7687847</string>
+    <string name="feeGroupExcise">0</string>
+    <string name="feeGroupWithholdingTax">0</string>
+
 </resources>
