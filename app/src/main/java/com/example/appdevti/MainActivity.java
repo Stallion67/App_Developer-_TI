@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
             Intent intent = new Intent(MainActivity.this,feeItemDetails.class);
             //shared
-            intent.putExtra("feeIdInput",_feeIdINput);
+            intent.putExtra("feeIdInputIntent",_feeIdINput);
             startActivity(intent);
         }
     }
