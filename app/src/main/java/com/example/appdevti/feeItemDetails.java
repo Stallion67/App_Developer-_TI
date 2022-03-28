@@ -21,6 +21,8 @@ public class feeItemDetails extends AppCompatActivity {
     private TextView textViewResult;
     //Variables
     String _feeIdInput;
+    int SentID;
+    private JsonPlaceHolderApi jsonPlaceHolderApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,12 +41,17 @@ public class feeItemDetails extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
+         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
 
         Call<List<itemFee>> call = jsonPlaceHolderApi.getFees();
 
-        call.enqueue(new Callback<List<itemFee>>() {
+        getItemFee();
+    }
 
+    private void getItemFee(){
+        Call<List<itemFee>> call= jsonPlaceHolderApi.getItemFee(Integer.parseInt( _feeIdInput));
+
+        call.enqueue(new Callback<List<itemFee>>() {
             @Override
             public void onResponse(Call<List<itemFee>> call, Response<List<itemFee>> response) {
 
@@ -57,14 +64,27 @@ public class feeItemDetails extends AppCompatActivity {
 
                 for (itemFee itemFee : itemFees) {
                     String content = "";
-                    
-//                    content += "ID: " + post.getId() + "\n";
-//                    content += "User ID: " + post.getUserId() + "\n";
-//                    content += "Title: " + post.getTitle() + "\n";
-//                    content += "Text: " + post.getText() + "\n\n";
+
+                    content += "name :" + itemFee.getName() + "\n";
+                    content += "payConfiguration :" + itemFee.getPayConfiguration() + "\n";
+                    content += "isInclusiveInAmount :" + itemFee.getIsInclusiveInAmount() + "\n";
+                    content += "hasProviderServiceCharge :" + itemFee.getHasProviderServiceCharge() + "\n";
+                    content += "hasProviderServiceCharge :" + itemFee.getHasProviderServiceCharge() + "\n";
+                    content += "overrideBillerFee :" + itemFee.getOverrideBillerFee()+ "\n";
+                    content += "providerServiceCharge :" + itemFee.getProviderServiceCharge() + "\n";
+                    content += "taxAccount :" + itemFee.getTaxAccount() + "\n";
+                    content += "withholdingTax :" + itemFee.getWithholdingTax() + "\n";
+                    content += "withholdingTaxAccount :" + itemFee.getWithholdingTaxAccount()+ "\n";
+                    content += "excise :" + itemFee.getExcise() + "\n";
+                    content += "exciseTaxAccount :" + itemFee.getExciseTaxAccount() + "\n";
+                    content += "providerServiceChargeAccount :" + itemFee.getProviderServiceChargeAccount() + "\n";
+                    content += "id:" + itemFee.getId() + "\n";
+                    content += "isActive :" + itemFee.getIsActive() + "\n";
+                    content += "issueDate :" + itemFee.getIssueDate() + "\n";
 
                     textViewResult.append(content);
                 }
+
             }
 
             @Override
@@ -73,8 +93,6 @@ public class feeItemDetails extends AppCompatActivity {
             }
         });
     }
-
-
 
     private  void addFeeItemSQLite(){
 
