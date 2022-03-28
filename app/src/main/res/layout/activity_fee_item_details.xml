@@ -11,6 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:backgroundTint="@color/buttonColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewResult"
+            android:textColor="#D81F1F"/>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
